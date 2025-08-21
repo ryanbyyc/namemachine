@@ -1,0 +1,2 @@
+# namemachine
+Tiny name generator
