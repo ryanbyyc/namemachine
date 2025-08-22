@@ -9,9 +9,13 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-          cache: true
+          cache: ${{ hashFiles('**/go.sum') != '' }}
+          cache-dependency-path: '**/go.sum'
 
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v6
         with:
-          version: latest
+          # Build with the runner's Go (1.25 from go.mod), not the prebuilt binary
+          install-mode: goinstall
+          version: 'latest'
+          args: --timeout=3m
