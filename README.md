@@ -14,7 +14,7 @@ Human-friendly name generator. **Opinionated by design:** names should read well
 [![CodeQL](https://github.com/ryanbyyc/namemachine/actions/workflows/codeql.yml/badge.svg)](https://github.com/ryanbyyc/namemachine/actions/workflows/codeql.yml)
 [![CI](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/ci.yml?branch=master&label=ci)](https://github.com/ryanbyyc/namemachine/actions/workflows/ci.yml)
 [![Lint](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/lint.yml?branch=master&label=lint)](https://github.com/ryanbyyc/namemachine/actions/workflows/lint.yml)
-[![Coverage](https://img.shields.io/codecov/c/github/ryanbyyc/namemachine?branch=master&label=coverage)](https://app.codecov.io/gh/ryanbyyc/namemachine)
+[![codecov](https://codecov.io/gh/ryanbyyc/namemachine/branch/master/graph/badge.svg)](https://codecov.io/gh/ryanbyyc/namemachine)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/ryanbyyc/namemachine?label=go)](https://github.com/ryanbyyc/namemachine/blob/master/go.mod)
 [![License](https://img.shields.io/github/license/ryanbyyc/namemachine)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/ryanbyyc/namemachine?display_name=tag&sort=semver)](https://github.com/ryanbyyc/namemachine/releases)
