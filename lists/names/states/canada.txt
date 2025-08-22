@@ -1,0 +1,13 @@
+alberta
+britishcolumbia
+manitoba
+newbrunswick
+newfoundlandandlabrador
+novascotia
+ontario
+princeedwardisland
+quebec
+saskatchewan
+northwestterritories
+nunavut
+yukon

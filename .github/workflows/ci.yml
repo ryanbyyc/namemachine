@@ -1,0 +1,54 @@
+name: CI
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Test with coverage
+        run: go test ./... -covermode=atomic -coverprofile=coverage.out
+
+      - name: Coverage summary
+        run: |
+          go tool cover -func=coverage.out | tail -n 1
+
+      - name: Coverage HTML
+        run: |
+          go tool cover -html=coverage.out -o coverage.html
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-html
+          path: coverage.html
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Enforce minimum coverage
+        env:
+          MIN_COVERAGE: "70.0"  # set your floor here
+        run: |
+          total=$(go tool cover -func=coverage.out | grep total: | awk '{print substr($3, 1, length($3)-1)}')
+          awk -v t="$total" -v m="$MIN_COVERAGE" 'BEGIN{ if (t+0 < m+0) { printf "coverage %.1f%% is below minimum %.1f%%\n", t, m; exit 1 } else { printf "coverage %.1f%% meets minimum %.1f%%\n", t, m; } }'
+
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: coverage.out
+          flags: unittests
+          fail_ci_if_error: false
+
+      - name: Bench (smoke)
+        run: go test -run=^$ -bench=. -benchmem -benchtime=100ms || true
