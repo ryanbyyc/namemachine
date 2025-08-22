@@ -12,13 +12,13 @@ Human-friendly name generator. **Opinionated by design:** names should read well
 [![Go Reference](https://pkg.go.dev/badge/github.com/ryanbyyc/namemachine.svg)](https://pkg.go.dev/github.com/ryanbyyc/namemachine)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ryanbyyc/namemachine)](https://goreportcard.com/report/github.com/ryanbyyc/namemachine)
 [![CodeQL](https://github.com/ryanbyyc/namemachine/actions/workflows/codeql.yml/badge.svg)](https://github.com/ryanbyyc/namemachine/actions/workflows/codeql.yml)
-[![CI](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/ci.yml?branch=main&label=ci)](https://github.com/ryanbyyc/namemachine/actions/workflows/ci.yml)
-[![Lint](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/lint.yml?branch=main&label=lint)](https://github.com/ryanbyyc/namemachine/actions/workflows/lint.yml)
-[![Coverage](https://img.shields.io/codecov/c/github/ryanbyyc/namemachine?branch=main&label=coverage)](https://app.codecov.io/gh/ryanbyyc/namemachine)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/ryanbyyc/namemachine?label=go)](https://github.com/ryanbyyc/namemachine/blob/main/go.mod)
+[![CI](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/ci.yml?branch=master&label=ci)](https://github.com/ryanbyyc/namemachine/actions/workflows/ci.yml)
+[![Lint](https://img.shields.io/github/actions/workflow/status/ryanbyyc/namemachine/lint.yml?branch=master&label=lint)](https://github.com/ryanbyyc/namemachine/actions/workflows/lint.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/ryanbyyc/namemachine?branch=master&label=coverage)](https://app.codecov.io/gh/ryanbyyc/namemachine)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/ryanbyyc/namemachine?label=go)](https://github.com/ryanbyyc/namemachine/blob/master/go.mod)
 [![License](https://img.shields.io/github/license/ryanbyyc/namemachine)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/ryanbyyc/namemachine?display_name=tag&sort=semver)](https://github.com/ryanbyyc/namemachine/releases)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ryanbyyc/namemachine/pulls)
 
 ---
 
