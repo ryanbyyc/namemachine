@@ -17,7 +17,6 @@ Human-friendly name generator. **Opinionated by design:** names should read well
 [![codecov](https://codecov.io/gh/ryanbyyc/namemachine/branch/master/graph/badge.svg)](https://codecov.io/gh/ryanbyyc/namemachine)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/ryanbyyc/namemachine?label=go)](https://github.com/ryanbyyc/namemachine/blob/master/go.mod)
 [![License](https://img.shields.io/github/license/ryanbyyc/namemachine)](./LICENSE)
-[![Release](https://img.shields.io/github/v/release/ryanbyyc/namemachine?display_name=tag&sort=semver)](https://github.com/ryanbyyc/namemachine/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ryanbyyc/namemachine/pulls)
 
 ---
